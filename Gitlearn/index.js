@@ -81,7 +81,7 @@
 // If you try to remove a folder with just git rm, it will fail. You must add the -r (recursive) flag.
 
 // Delete folder everywhere: git rm -r folder_name
-
+    
 // Delete folder from GitHub only (keep locally): git rm -r --cached folder_name
 
 // Command	Deletes Local File?	Deletes GitHub File?

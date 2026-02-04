@@ -41,9 +41,11 @@
 
 // Visual: In VS Code, the U will change to a solid green A.
 
-//git branch : tells which branch are you on
-//git branch dev: new branch created named "dev"
-//git switch dev: switches from by default "master" to "dev"
+// git branch : tells which branch are you on
+// git branch dev: new branch created named "dev"
+// git switch dev: switches from by default "master" to "dev"
+
+
 
 
 

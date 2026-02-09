@@ -12,24 +12,24 @@
 
 // Methods: Functions defined inside the class that represent the object's abilities.
 
-class Car {
-  // 1. Initializing the object's properties
-  constructor(brand, color) {
-    this.brand = brand;
-    this.color = color;
-    this.isEngineOn = false;
-  }
+// class Car {
+//   // 1. Initializing the object's properties
+//   constructor(brand, color) {
+//     this.brand = brand;
+//     this.color = color;
+//     this.isEngineOn = false;
+//   }
 
-  // 2. Defining a method (behavior)
-  startEngine() {
-    this.isEngineOn = true;
-    console.log(`The ${this.color} ${this.brand}'s engine is now roaring!`);
-  }
-}
+//   // 2. Defining a method (behavior)
+//   startEngine() {
+//     this.isEngineOn = true;
+//     console.log(`The ${this.color} ${this.brand}'s engine is now roaring!`);
+//   }
+// }
 
 // // 3. Creating an "Instance" (Object)
-const myCar = new Car("Toyota", "Red");
-myCar.startEngine(); // Output: The Red Toyota's engine is now roaring!
+// const myCar = new Car("Toyota", "Red");
+// myCar.startEngine(); // Output: The Red Toyota's engine is now roaring!
 
 
 // Important Rules for your Index
@@ -41,19 +41,19 @@ myCar.startEngine(); // Output: The Red Toyota's engine is now roaring!
 
 
 // Class Student:
-class Student{ 
-// 1. The Constructor: Initializes properties when a new object is created constructor(name, grade) { 
-    constructor(name,grade){
-        this.name = name;
-        this.grade = grade; 
-    }
+// class Student{ 
+// // 1. The Constructor: Initializes properties when a new object is created constructor(name, grade) { 
+//     constructor(name,grade){
+//         this.name = name;
+//         this.grade = grade; 
+//     }
  
-// 2. Methods: Functions that belong to the object 
-    study(){
-     console.log(`${this.name} is studying for the exam.`);
-     } 
-}
- // Creating an "instance" of the class 
-const student1 = new Student("Sarah", "A"); 
-student1.study();   // Output: "Sarah is studying for the exam."
-console.log(student1); 
+// // 2. Methods: Functions that belong to the object 
+//     study(){
+//      console.log(`${this.name} is studying for the exam.`);
+//      } 
+// }
+//  // Creating an "instance" of the class 
+// const student1 = new Student("Sarah", "A"); 
+// student1.study();   // Output: "Sarah is studying for the exam."
+// console.log(student1); 

@@ -75,7 +75,8 @@
 // You just press a button; you don't need to know how the engine starts.
 
 // class CoffeeMachine {
-//   start() {
+//   start(name) {
+//     console.log(name);
 //     this.#boilWater();
 //     this.#brewCoffee();
 //     console.log("Coffee is ready!");
@@ -90,6 +91,7 @@
 
 // const myCoffee = new CoffeeMachine();
 // myCoffee.start();
+// myCoffee.#boilWater();
 
 // // Output: Coffee is ready!
 
@@ -148,8 +150,8 @@
 
 // // const shapes = [new Circle(), new Square()];
 // // shapes.forEach(s => s.draw());
-// // const shape = new Shape();
-// // shape.draw();
+// const shape = new Shape();
+// shape.draw();
 // const shapeCircle = new Circle();
 // shapeCircle.draw();
 
@@ -166,6 +168,10 @@
 // Logic: function.call(owner, arg1, arg2)
 
 // const student1 = {
+//     constructor(city,country){
+//         this.city = city;
+//         this.country = country;
+//     },
 //   name: "Aryan",
 //   introduce: function(city, country) {
 //     console.log(`Hi, I am ${this.name} from ${city}, ${country}.`);

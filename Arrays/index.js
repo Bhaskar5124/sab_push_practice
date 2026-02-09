@@ -10,7 +10,7 @@
 // //array methods
 
 //array element manipulation
-// let a = [1,2,3,4,5]
+// let a = [1,2,3,4,5];
 // // push
 //time complexity less
 // // adds element into your array(adds in last)
@@ -33,12 +33,13 @@
 //deletes a element inside array from front
 //time complexity higher than pop
 // let b = a.shift();
-// console.log(a,b);
+// console.log(a);
+// console.log(b);
 
 //splice
 // let a = ["apple", "banana", "orange", "guava"];
-
-// a.splice(2,0,"cherry", "peas");
+//a.splice(index,number of elements to delete, elements to add at index);
+// a.splice(2,1,"cheery");
 // console.log(a);
 
 //splice method can delete specifically
@@ -50,8 +51,8 @@
 
 // // // // Task: Square every number
 // const squared = numbers.map(num => num**2);
-// // let newArray = numbers.map((mul)=>mul*2);
-// console.log(squared);
+// let newArray = numbers.map((mul)=>mul*2);
+// console.log(numbers,squared);
 // console.log(newArray);
 
 
@@ -60,7 +61,7 @@
 // const prices = [10, 50, 80, 120, 5];
 
 // // // Task: Keep only prices over 60
-// const expensive = prices.filter((p) => p > 60);
+// const expensive = prices.filter(p => p > 60);
 
 // console.log(expensive); // [80, 120]
 
@@ -70,7 +71,7 @@
 
 // // // Task: Calculate the total sum
 // // // acc (accumulator) starts at 0, curr is the current item
-// const total = cart.reduce((acc, curr) => acc + curr, 40);
+// const total = cart.reduce((acc, curr) => acc + curr, 60);
 // // const total = cart.reduce((acc,curr)=> acc+curr,0);
 
 // console.log(total); // 60
@@ -89,8 +90,14 @@
 
 
 //sort
+
 // let a = [1,2,3,4,20,21,22,10,11,12];
-// a.sort((a,b)=>b-a);
+// console.log(a);
+// a.sort();
+// a.sort((a,b)=>{
+//     // console.log(a,b);
+//     a-b;
+// });
 // a.sort((apple,banana)=>banana-apple);
 // console.log(a);
 
@@ -115,8 +122,8 @@
 //descending larger to smaller
 
 //reverse
-// let z = a.reverse();
-// console.log(z);
+// a.reverse();
+// console.log(a);
 // find
 // const users = [
 //   { id: 1, name: 'Alice' },
@@ -141,29 +148,30 @@
 // console.log(fruits[2]);
 
 // console.log(index);
+
 // //includes
 
 // let a = ["a", "b", "c"];
-// console.log(a.includes("A"));
+// console.log(a.includes("a"));
 // //every
 // //some
-// const ages = [11,14,11,14,9,9];
+// const ages = [19,19,21,24,29,29];/
 
-// // const allAdults = ages.every(age => age >= 18); //AND
-// // console.log(allAdults);
-// const hasMinor = ages.some(age => age >= 18); //OR
+// const allAdults = ages.every(age => age >= 18); //AND
+// console.log(allAdults);
+// const hasMinor = ages.some(age => age <= 18); //OR
 // console.log(hasMinor);
 
 //join
-// let ages = ['h','e','l','l','o',true,{name:"bhaskar"},[1,2,3]];
+// let ages = ['h','e','l','l','o'];
 // let agesstr = ages.join("");
 // console.log(agesstr);
 
 
 // //flat 
-// const myArr = [[1,2],[3,[2,3],4],[5,6]];
-// const z = myArr.flat(1)
-// console.log(z);
+const myArr = [[1,2],[3,[2,3],4],[5,6]];
+const z = myArr.flat(2);
+console.log(z);
 // const newArr = myArr.flat(Infinity);
 // // console.log(myArr);
 // console.log(newArr); 

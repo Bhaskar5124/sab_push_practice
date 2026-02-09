@@ -1,10 +1,19 @@
+// function Hello(){
+//         console.log("I am function");
+// }
 
+// Hello();
+// Hello();
+// Hello();
+// Hello();
 
 // function sum(a,b){ //a,b are parameter
 //     return a+b;
+// // console.log(a+b);
 // }
 
-// let z = sum(5,6); // z = 11
+// let z = sum(5,6); // z = 11 //5 and 6 are arguements
+// sum(5,6);
 // let c = 9;
 // console.log("c+z",c+z);
 // console.log(z);
@@ -37,17 +46,34 @@
 
 // //3.Arrow function
 // const multiply = (a,b) => a*b;
-
+// //automatic return
 // let z = multiply(6,5);
 // console.log(z);
 
-// //4-5.Immediately Invoked Function and anonymous function
+//4-5.Immediately Invoked Function and anonymous function
 // (function(){
 //     console.log("I run Immediately");
 // })();
 
 
+
+
 //Hoisting: Try to call/access a variable or function even before its declaration or initialization
+
+// hello();
+
+// function hello(){
+//         console.log("hello");
+// }
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// var a = 1;
+// let b = 2;
+// const c = 3;
+
+
 
 
 
@@ -92,15 +118,15 @@
 
 // let c = 10;
 // function outer(){
-//     // let c = 40;
-//     // let d = 30;
+// //     let c = 40;
+//     let d = 30;
 
 //     function inner(){
 //         console.log(c); //finds inside parent
 //     }
 
 //     inner();
-//     console.log(c); //finds inside local memory 
+// //     console.log(c); //finds inside local memory 
 // }
 
 // outer();
@@ -118,7 +144,7 @@
 // }
 
 // let returnedVal = outer();
-// console.log(returnedVal);
+// // console.log(returnedVal);
 
 // returnedVal();
 
@@ -173,7 +199,8 @@
 // console.log(sqr(19));
 
 
-//alert("Hello, I am alert");
+// alert("Hello, I am alert");
+// window.alert("Hello, I am alert");
 // console.log(window);
 //---------------------------------------------------------------
 
@@ -185,7 +212,7 @@
 
 // In Node.js: global
 
-//console.log(this);
+// console.log(this);
 // console.log(this);
  // Prints: window (in browser)
 
@@ -207,8 +234,16 @@
 //     }
 // };
 
-//user.greet(); // Prints: "Hello, my nam"
+
+
+// user.greet(); // Prints: "Hello, my nam"
 // // Here, 'this' is the 'user' object.
+
+
+// function hello(){
+//         console.log(this.alert("Hello"));
+// }
+// hello();
 
 // 3. Arrow Functions
 // This is the most important rule for React developers. 
@@ -272,11 +307,11 @@
 // 4. Constructor Functions & Classes
 // When you use the new keyword, this refers to the brand new instance being created.
 // function Person(name) {
-//     this.name = name; // 'this' is the new object being built
+//     this.nam = name; // 'this' is the new object being built
 // }
 
 // const person1 = new Person("Alice");
-// console.log(person1.name);
+// console.log(person1.nam);
 
 // let b = [];
 // let a = new Array();
@@ -287,17 +322,18 @@
 
 // Construction Function: Starts with capital letter, Starts with new keyword, this keyword,
 // Example:
-// function Student(name, age, grade) {
-//  // "this" refers to the new object being created
-// this.nam = name;
-// this.ag = age; 
-// this.grad = grade; 
-// this.sayHello = function() { 
-// console.log(`Hi, my name is ${this.nam}!`);
-//  };
-// } 
+function Student(name, age, grade) {
+ // "this" refers to the new object being created
+this.nam = name;
+this.ag = age; 
+this.grad = grade; 
+this.sayHello = function() { 
+console.log(`Hi, my name is ${this.nam}!`);
+ };
+} 
 // // Creating "instances" of Student 
-// const student1 = new Student("Alice", 20, "A"); 
+const student1 = new Student("Alice", 20, "A"); 
+// console.log("student1",student1);
 // const s = {
 //     nam : "Alice",
 //     ag: 20,

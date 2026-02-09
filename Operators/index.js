@@ -125,6 +125,6 @@
 
 
 //Nullish operator(??)
-//works for null and undefined
-let n;
-console.log(n ?? 10);
+//works for null or undefined
+// let n = null;
+// console.log(n ?? 15);

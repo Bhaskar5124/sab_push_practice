@@ -469,37 +469,37 @@
     // }
 
 
-//     const handleCall = async () => {
-//     // 1. Optional: Set a loading state to true here
-//     // setLoading(true); 
+    const handleCall = async () => {
+    // 1. Optional: Set a loading state to true here
+    // setLoading(true); 
 
-//     try {
-//         // 2. Fetch the data from the API
-//         const response = await fetch('https://dummyjson.com/quotes');
-//         //console.log('response',response);
+    try {
+        // 2. Fetch the data from the API
+        const response = await fetch('https://dummyjson.com/quotes');
+        //console.log('response',response);
 
-//         // 3. Check if the response is successful (status 200-299)
-//         if (!response.ok) {
-//             throw new Error(`HTTP error! Status: ${response.status}`);
-//         }
+        // 3. Check if the response is successful (status 200-299)
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
 
-//         // 4. Parse the JSON body
-//         const result = await response.json();
+        // 4. Parse the JSON body
+        const result = await response.json();
 
-//         if(result){
-//             console.log(result.quotes);
-//         }
+        if(result){
+            console.log(result.quotes);
+        }
 
 
-//     } catch (error) {
-//         // 6. Handle errors (Network issues, 404s, or JSON parsing errors)
-//         console.error("Failed to fetch data:", error.message);
-//     } finally {
-//         console.log("Data called success");
-//     }
-// };
+    } catch (error) {
+        // 6. Handle errors (Network issues, 404s, or JSON parsing errors)
+        console.error("Failed to fetch data:", error.message);
+    } finally {
+        console.log("Data called success");
+    }
+};
 
-// handleCall();
+handleCall();
 
 
 // async function callApii(){

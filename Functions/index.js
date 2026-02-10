@@ -1,4 +1,5 @@
 // function Hello(){
+//         //task
 //         console.log("I am function");
 // }
 
@@ -12,7 +13,7 @@
 // // console.log(a+b);
 // }
 
-// let z = sum(5,6); // z = 11 //5 and 6 are arguements
+// sum(5,6); // z = 11 //5 and 6 are arguements
 // sum(5,6);
 // let c = 9;
 // console.log("c+z",c+z);

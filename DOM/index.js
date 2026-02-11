@@ -174,13 +174,9 @@ let an = document.querySelector('a')
 
 //All appends
 let parentElement = document.getElementById("parent");
+let h3 = document.createElement('h3');
+h3.textContent = "I am h3";
 
-// appendChild(): Only accepts Node objects (like a <div>, <span>, or a comment). If you try to pass a plain string, it will throw an error.
-
-// append(): Accepts both Node objects and DOMStrings (plain text). If you pass a string, it automatically creates a text node for you.
-
-// JavaScript
-// const parent = document.createElement('div');
 
 // // appendChild: Needs an object
 // const span = document.createElement('span');
@@ -191,39 +187,30 @@ let parentElement = document.getElementById("parent");
 // parent.append("Hello World"); // Works perfectly
 
 
-
-// Number of Arguments
-// appendChild(): Can only add one node at a time. It returns the node that was just appended.
-
-// append(): Can add multiple items at once, separated by commas. It does not return anything (undefined).
-
-// JavaScript
-// const div = document.createElement('div');
-// const p = document.createElement('p');
-
-// // appendChild
-// div.appendChild(p);
+// appendChild
+// div.appendChild(h3);
 
 // // append (Multiple items at once)
-// div.append(p, "Some text", document.createElement('span'));
-
+// div.append(h3, "Some text", document.createElement('span'));
 
 
 // const returnedNode = parent.appendChild(child); // returnedNode === child
 // const result = parent.append(child);            // result === undefined
 
 
+// Feature,             append(),                                     appendChild()
+// Simplicity,          Extremely simple: parent.prepend(child),       "Verbose: parent.insertBefore(child, reference)"
+// Positioning,         Always adds to the End,                         Always adds to the End,  (depending on the reference).
+// Multiple Items,      "Yes, you can prepend many at once.",          "No, only one node at a time."
+// Accepts Strings,     Yes (automatically creates Text Nodes).,        No (only accepts Node objects).
+// Return Value,        undefined,                                      The inserted Node.
+// Browser Support      Modern browsers (No IE support).,               All browsers (including Internet Explorer).
+//-----------------------------------------------------------------------------------------------------------------------------------
 
-//append
-let h3 = document.createElement('h3');
-h3.textContent = "I am h3";
- parentElement.append(h3);
-//appendChild
 
 
 
-
-
+//prepend and insertBefore
 
 // Feature,             prepend(),                                     insertBefore()
 // Simplicity,          Extremely simple: parent.prepend(child),       "Verbose: parent.insertBefore(child, reference)"
@@ -233,26 +220,15 @@ h3.textContent = "I am h3";
 // Return Value,        undefined,                                      The inserted Node.
 // Browser Support      Modern browsers (No IE support).,               All browsers (including Internet Explorer).
 //prepend
-// parentElement.prepend(newElement)
+// parentElement.prepend(h3);
 //insertBefore
-// parentElement.insertBefore(newElement,ReferenceElement);
 
-//---------------------------------------------------------------------------
+// let h2 = document.querySelector('h2');
+// parentElement.insertBefore(h3,h2);
+// parentElement.prepend(h3,h2);
 
-// function handleBtn(){
-//     console.log("ia am btn");
-// }
+//-----------------------------------------------------------------------------------------------------
 
-// function handleDivv(){
-//     console.log("ia am divv");
-// }
-
-// function handleH1(){
-//     console.log("ia am h1");
-// }
-
-
-//--------------------------------------------------------
 //Carousel
 
 // let arrImg = [
@@ -271,14 +247,6 @@ h3.textContent = "I am h3";
 //     n = (n+1)%arrImg.length;
 // } , 2000)
 
-
-
-// after 30s => stop changing
-
-
-// setTimeout(function(){
-//     clearInterval(idd)
-// }, 10000)
 
 
 //Events
@@ -338,9 +306,10 @@ h3.textContent = "I am h3";
 
 // let inpEl = document.querySelector('input');
 
+
 // inpEl.addEventListener('input' , function(event){
-//     // console.log(event);
-//     // console.log(event.data);
+//     console.log(event);
+//     console.log(event.data);
 //     console.log(event.target.value);
 //     console.log(inpEl.value);
 // })
@@ -427,10 +396,10 @@ h3.textContent = "I am h3";
 // e.key: For keyboard events, the specific key pressed (e.g., "Enter").
 
 // e.clientX / e.clientY: The coordinates of the mouse click.
-
+// let h1El = document.querySelector('h1');
 // inpEl.addEventListener('input' , function(event){
-//     h1El.innerText = event.target.value
-//     // h1El.innerHTML = inpEl.value
+//     // h1El.innerText = event.target.value
+//     h1El.innerHTML = inpEl.value
 // })
 
 // ----------------------------------
